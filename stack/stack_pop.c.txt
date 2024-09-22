@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+
+#define max 5
+
+int stack[max]={1,2,3,4,5}, top = 4;
+
+//pop
+void pop(){
+    if(top== -1){
+        printf("stack Underflow");
+    }else{
+        printf("%d\n",stack[top]);
+        top--;
+    }
+}
+int main() {
+    // Write C code here
+    pop();
+    pop();
+    // printf("Remaining elements=\n");
+    // for (int i=0; i<=top;i++){
+        
+    //     printf("%d\n",stack[i]);
+    // }
+
+    return 0;
+}

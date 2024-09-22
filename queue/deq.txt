@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+
+ 
+#define MAX 5
+int q[MAX]={12,34,23,55,22};
+int front =0, rear=4;
+
+void deq(){
+    if(front ==-1 || front > rear){
+        printf("empty");
+        
+    } else{
+        printf("%d",q[front]);
+        front++;
+        
+        
+    }
+}
+int main() {
+    
+    deq();
+    
+    
+    
+
+    return 0;
+}

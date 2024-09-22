@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define MAX 5
+
+int stack[MAX] = {10, 20, 30, 40, 50}; 
+int top = 4;
+
+int isFull() {
+    return top == MAX - 1;  
+}
+
+int main() {
+    if (isFull()) {
+        printf(" full\n");
+    } else {
+        printf(" not full\n");
+    }
+
+    return 0;
+}

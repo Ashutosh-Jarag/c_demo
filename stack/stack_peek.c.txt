@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<stdlib.h>
+
+#define max 5
+
+int stack[max]={1,2,3,4,5}, top = 4;
+
+//pop
+void peek(){
+    if(top== -1){
+        printf("stack is empty");
+    }else{
+        printf("%d\n",stack[top]);
+        
+    }
+}
+int main() {
+    // Write C code here
+    peek();
+
+    return 0;
+}
